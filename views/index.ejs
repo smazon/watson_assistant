@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" name="robots" content="noindex"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'/>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+  </head>
+  <body>
+    <div id="frame">
+	<div id="sidepanel">
+		<div id="profile">
+			<div class="wrap">
+				<img id="profile-img" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" class="online" alt="" />
+				<p>You</p>
+				<i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
+				<div id="status-options">
+					<ul>
+						<li id="status-online" class="active"><span class="status-circle"></span> <p>Online</p></li>
+						<li id="status-away"><span class="status-circle"></span> <p>Away</p></li>
+						<li id="status-busy"><span class="status-circle"></span> <p>Ocupado</p></li>
+						<li id="status-offline"><span class="status-circle"></span> <p>Offline</p></li>
+					</ul>
+				</div>
+				<div id="expanded">
+					<label for="twitter"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></label>
+					<input name="twitter" type="text" value="Gabriel" />
+					<label for="twitter"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></label>
+					<input name="twitter" type="text" value="Gabriel" />
+					<label for="twitter"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></label>
+					<input name="twitter" type="text" value="Gabriel" />
+				</div>
+			</div>
+		</div>
+		<div id="search">
+			<label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+			<input type="text" placeholder="Search contacts..." />
+		</div>
+		<div id="contacts">
+			<ul>
+				<li class="contact active">
+					<div class="wrap">
+						<span class="contact-status busy"></span>
+						<img src="https://upload.wikimedia.org/wikipedia/en/0/00/IBM_Watson_Logo_2017.png" alt="" />
+						<div class="meta">
+							<p class="name">Watson</p>
+							<p class="preview"></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="bottom-bar">
+			<button id="addcontact"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> <span>Adicionar contato</span></button>
+			<button id="settings"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> <span>Configurações</span></button>
+		</div>
+	</div>
+	<div class="content">
+		<div class="contact-profile">
+			<img src="https://upload.wikimedia.org/wikipedia/en/0/00/IBM_Watson_Logo_2017.png" alt="" />
+			<p>Watson</p>
+			<div class="social-media">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				 <i class="fa fa-instagram" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="messages">
+			 <ul>
+			</ul>
+		</div>
+		<div class="message-input">
+			<div class="wrap">
+			<input type="text" placeholder="Escreva sua mensagem..." />
+			<i class="fa fa-paperclip attachment" aria-hidden="true"></i>
+			<button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+<script src="/javascripts/js.js"></script>
+
+  </body>
+</html>
